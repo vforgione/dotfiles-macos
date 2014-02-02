@@ -25,6 +25,9 @@ export PATH="/usr/local/mysql/bin:$PATH"
 # sbin
 export PATH="/usr/local/sbin:$PATH"
 
+# personal bin
+export PATH="~/.bin:$PATH"
+
 # always use /usr/local/bin first
 export PATH="/usr/local/bin:$PATH"
 
