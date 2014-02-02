@@ -1,0 +1,18 @@
+[user]
+name = vforgione
+email = v.forgione@gmail.com
+
+[color]
+ui = true
+diff = true
+
+[alias]
+co = checkout
+cb = checkout -b
+cm = commit -m
+df = diff
+st = status
+br = branch
+hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+type = cat-file -t
+dump = cat-file -p
