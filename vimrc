@@ -1,7 +1,7 @@
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
 au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
-au BufRead,BufNewFile *rb,*html,*js,*css,*json,*yaml set tabstop=4
+au BufRead,BufNewFile *rb,*html,*js,*css,*json,*yaml set tabstop=2
 
 
 " What to use for an indent.
@@ -19,7 +19,7 @@ fu Select_c_style()
 endf
 au BufRead,BufNewFile *.c,*.h call Select_c_style()
 au BufRead,BufNewFile Makefile* set noexpandtab
-au BufRead,BufNewFile *.rb,*.html,*.js,*.css,*.json,*.yaml set shiftwidth=4
+au BufRead,BufNewFile *.rb,*.html,*.js,*.css,*.json,*.yaml set shiftwidth=2
 au BufRead,BufNewFile *.rb,*.html,*.js,*.css,*.json,*.yaml set expandtab
 
 
