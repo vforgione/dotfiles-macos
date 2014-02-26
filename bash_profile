@@ -13,6 +13,7 @@ alias la="ls -al"
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
 chruby 1.9
+alias ber="bundle exec rails"
 
 
 ## path additions
@@ -33,8 +34,11 @@ export PATH="/usr/local/bin:$PATH"
 
 
 # bash history config
-export HISTFILESIZE=2000
+export HISTFILESIZE=10000
 
 
 # import .sensitive
 source ~/.sensitive
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
