@@ -7,6 +7,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # ls shortcuts
 alias ll="ls -l"
 alias la="ls -al"
+alias lt="ls -ltr"
 
 
 # ruby stuff
@@ -14,6 +15,7 @@ source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
 chruby 1.9
 alias ber="bundle exec rails"
+alias bec="bundle exec cap"
 
 
 ## path additions
@@ -29,6 +31,9 @@ export PATH="/usr/local/sbin:$PATH"
 # personal bin
 export PATH="~/.bin:$PATH"
 
+# heroku toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # always use /usr/local/bin first
 export PATH="/usr/local/bin:$PATH"
 
@@ -40,5 +45,3 @@ export HISTFILESIZE=10000
 # import .sensitive
 source ~/.sensitive
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
