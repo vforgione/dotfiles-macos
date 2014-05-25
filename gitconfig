@@ -11,10 +11,12 @@ diff = true
 co = checkout
 cb = checkout -b
 cm = commit -m
+cma = commit --amend -m
 df = diff
 st = status
 br = branch
 po = push origin
+ph = push heroku
 hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 type = cat-file -t
 dump = cat-file -p

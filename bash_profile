@@ -10,12 +10,21 @@ alias la="ls -al"
 alias lt="ls -ltr"
 
 
+# virtualenv python 3
+alias venv3="virtualenv -p `which python3`"
+
+
 # ruby stuff
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
 chruby 1.9
 alias ber="bundle exec rails"
 alias bec="bundle exec cap"
+
+
+# sails.js stuff
+alias sgm="sails generate model"
+alias sgc="sails generate controller"
 
 
 ## path additions
@@ -37,10 +46,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # always use /usr/local/bin first
 export PATH="/usr/local/bin:$PATH"
 
-
 # bash history config
 export HISTFILESIZE=10000
-
 
 # import .sensitive
 source ~/.sensitive
