@@ -12,7 +12,7 @@ alias lt="ls -ltr"
 
 # virtualenv python 3
 alias venv3="virtualenv -p `which python3`"
-
+alias gotoenv=". ~/.bin/goto-env.sh"
 
 # ruby stuff
 source '/usr/local/share/chruby/chruby.sh'
