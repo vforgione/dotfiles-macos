@@ -1,6 +1,6 @@
 [user]
-name = vforgione
-email = v.forgione@gmail.com
+	name = vforgione
+	email = v.forgione@gmail.com
 identityfile = ~/.ssh/keys/id_rsa
 
 [color]
@@ -20,3 +20,6 @@ ph = push heroku
 hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 type = cat-file -t
 dump = cat-file -p
+[ui]
+	color = true
+	editor = vim

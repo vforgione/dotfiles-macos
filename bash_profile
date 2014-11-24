@@ -14,9 +14,6 @@ alias lt="ls -ltr"
 alias start_mongo="mongod --config /usr/local/etc/mongod.conf"
 alias start_postgres="postgres -D /usr/local/var/postgres"
 
-# virtualenv python 3
-alias goto_env=". ~/.bin/goto-env.sh"
-
 
 ## path additions
 # personal bin
