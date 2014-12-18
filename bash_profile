@@ -28,4 +28,3 @@ export HISTFILESIZE=10000
 
 # include ~/.bash_prompt
 . ~/.bash_prompt
-
