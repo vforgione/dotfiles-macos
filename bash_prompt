@@ -92,37 +92,15 @@ function set_git_branch {
 
   # Set color based on clean/staged/dirty.
   if [[ ${git_status} =~ "working directory clean" ]]; then
-    state="${BIGreen}"
+    state="${On_IGreen}${BIWhite}"
   elif [[ ${git_status} =~ "Changes to be committed" ]]; then
-    state="${BIYellow}"
+    state="${On_IYellow}${BIBlack}"
   else
-    state="${BIRed}"
-  fi
-
-  # Set arrow icon based on status against remote.
-  remote_pattern="# Your branch is (.*) of"
-  if [[ ${git_status} =~ ${remote_pattern} ]]; then
-    if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote="â†‘"
-    else
-      remote="â†“"
-    fi
-  else
-    remote=""
-  fi
-  diverge_pattern="# Your branch and (.*) have diverged"
-  if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote="â†•"
-  fi
-
-  # Get the name of the branch.
-  branch_pattern="^# On branch ([^${IFS}]*)"
-  if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    branch=${BASH_REMATCH[1]}
+    state="${On_Red}${BIWhite}"
   fi
 
   # Set the final branch string.
-  BRANCH="${state}{${GIT_BRANCH}}${remote}${COLOR_NONE} "
+  BRANCH="${state}{${GIT_BRANCH}}${COLOR_NONE} "
 }
 
 # Return the prompt symbol to use, colorized based on the return value of the
@@ -131,7 +109,7 @@ function set_prompt_symbol () {
   if test $1 -eq 0 ; then
       PROMPT_SYMBOL="${BIWhite}\$${COLOR_NONE} "
   else
-      PROMPT_SYMBOL="${RED}\$${COLOR_NONE} "
+      PROMPT_SYMBOL="${BIRed}\$${COLOR_NONE} "
   fi
 }
 
