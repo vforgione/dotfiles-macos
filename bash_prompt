@@ -94,7 +94,7 @@ function set_git_branch {
   if [[ ${git_status} =~ "working directory clean" ]]; then
     state="${On_Green}${BIWhite}"
   elif [[ ${git_status} =~ "Changes to be committed" ]]; then
-    state="${On_Yellow}${BIBlack}"
+    state="${On_IYellow}${BIBlack}"
   else
     state="${On_Red}${BIWhite}"
   fi
