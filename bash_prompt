@@ -92,9 +92,9 @@ function set_git_branch {
 
   # Set color based on clean/staged/dirty.
   if [[ ${git_status} =~ "working directory clean" ]]; then
-    state="${On_IGreen}${BIWhite}"
+    state="${On_Green}${BIWhite}"
   elif [[ ${git_status} =~ "Changes to be committed" ]]; then
-    state="${On_IYellow}${BIBlack}"
+    state="${On_Yellow}${BIBlack}"
   else
     state="${On_Red}${BIWhite}"
   fi
