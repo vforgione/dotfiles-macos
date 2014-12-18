@@ -1,5 +1,5 @@
 # bash prompt
-export PS1="\u@\h:\w \$ "
+export PS1="\[$(tput bold)\]\[$(tput setaf 7)\]\u@\h:\w \\$ \[$(tput sgr0)\]\[$(tput sgr0)\]"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
@@ -24,4 +24,8 @@ export PATH="/usr/local/bin:$PATH"
 
 # bash history config
 export HISTFILESIZE=10000
+
+
+# include ~/.bash_prompt
+. ~/.bash_prompt
 
