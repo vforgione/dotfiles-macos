@@ -62,3 +62,6 @@ set encoding=utf-8
 
 " For full syntax highlighting:
 syntax on
+
+" fix backspace for v7.4
+set backspace=2
