@@ -10,7 +10,7 @@ Green="\[\033[0;32m\]"        # Green
 Yellow="\[\033[0;33m\]"       # Yellow
 Blue="\[\033[0;34m\]"         # Blue
 Purple="\[\033[0;35m\]"       # Purple
-Blue="\[\033[0;36m\]"         # Blue
+Cyan="\[\033[0;36m\]"         # Cyan
 White="\[\033[0;37m\]"        # White
 
 # Bold
@@ -20,7 +20,7 @@ BGreen="\[\033[1;32m\]"       # Green
 BYellow="\[\033[1;33m\]"      # Yellow
 BBlue="\[\033[1;34m\]"        # Blue
 BPurple="\[\033[1;35m\]"      # Purple
-BBlue="\[\033[1;36m\]"        # Blue
+BCyan="\[\033[1;36m\]"        # Cyan
 BWhite="\[\033[1;37m\]"       # White
 
 # Underline
@@ -30,7 +30,7 @@ UGreen="\[\033[4;32m\]"       # Green
 UYellow="\[\033[4;33m\]"      # Yellow
 UBlue="\[\033[4;34m\]"        # Blue
 UPurple="\[\033[4;35m\]"      # Purple
-UBlue="\[\033[4;36m\]"        # Blue
+UCyan="\[\033[4;36m\]"        # Cyan
 UWhite="\[\033[4;37m\]"       # White
 
 # Background
@@ -40,7 +40,7 @@ On_Green="\[\033[42m\]"       # Green
 On_Yellow="\[\033[43m\]"      # Yellow
 On_Blue="\[\033[44m\]"        # Blue
 On_Purple="\[\033[45m\]"      # Purple
-On_Blue="\[\033[46m\]"        # Blue
+On_Cyan="\[\033[46m\]"        # Cyan
 On_White="\[\033[47m\]"       # White
 
 # High Intensty
@@ -50,7 +50,7 @@ IGreen="\[\033[0;92m\]"       # Green
 IYellow="\[\033[0;93m\]"      # Yellow
 IBlue="\[\033[0;94m\]"        # Blue
 IPurple="\[\033[0;95m\]"      # Purple
-IBlue="\[\033[0;96m\]"        # Blue
+ICyan="\[\033[0;96m\]"        # Cyan
 IWhite="\[\033[0;97m\]"       # White
 
 # Bold High Intensty
@@ -60,7 +60,7 @@ BIGreen="\[\033[1;92m\]"      # Green
 BIYellow="\[\033[1;93m\]"     # Yellow
 BIBlue="\[\033[1;94m\]"       # Blue
 BIPurple="\[\033[1;95m\]"     # Purple
-BIBlue="\[\033[1;96m\]"       # Blue
+BICyan="\[\033[1;96m\]"       # Cyan
 BIWhite="\[\033[1;97m\]"      # White
 
 # High Intensty backgrounds
@@ -70,7 +70,7 @@ On_IGreen="\[\033[0;102m\]"   # Green
 On_IYellow="\[\033[0;103m\]"  # Yellow
 On_IBlue="\[\033[0;104m\]"    # Blue
 On_IPurple="\[\033[10;95m\]"  # Purple
-On_IBlue="\[\033[0;106m\]"    # Blue
+On_ICyan="\[\033[0;106m\]"    # Cyan
 On_IWhite="\[\033[0;107m\]"   # White
 
 # Detect whether the current directory is a git repository.
