@@ -51,6 +51,9 @@ au BufRead,BufNewFile *.c,*.h set formatoptions-=c formatoptions-=o formatoption
 " Use UNIX (\n) line endings.
 au BufNewFile *.py,*.pyw,*.c,*.h,*.rb,*.html,*.js,*.css,*.json,*.yaml set fileformat=unix
 
+" make backspace work like most other apps
+set backspace=2
+
 
 " ----------------------------------------------------------------------------
 " The following section contains suggested settings.  While in no way required
