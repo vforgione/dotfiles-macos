@@ -20,6 +20,8 @@ alias vvssh="vagrant ssh"
 alias vvhalt="vagrant halt"
 alias vvdestroy="vagrant destroy"
 
+alias brewtime="brew update && brew doctor && brew upgrade && brew linkapps && brew prune"
+
 alias start_mongo="mongod --config /usr/local/etc/mongod.conf"
 alias start_postgres="postgres -D /usr/local/var/postgres"
 alias start_influx="influxdb -config=/usr/local/etc/influxdb.conf"
@@ -33,4 +35,3 @@ export HISTFILESIZE=10000
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
-
