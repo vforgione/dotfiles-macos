@@ -1,28 +1,3 @@
-" break vi compat
-set nocompatible
-filetype off
-
-
-" update runtime path
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-
-" plugins can be named as github-user/repo-name
-" or directly named as they appear in the vundle dir
-Plugin 'gmarik/vundle'
-Plugin 'scrooloose/nerdtree'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'powerline/powerline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sensible'
-Plugin 'kien/ctrlp.vim'
-
-
-" turn on filetype functionality
-filetype plugin indent on
-
-
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
 au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
@@ -90,22 +65,3 @@ set encoding=utf-8
 
 " For full syntax highlighting:
 syntax on
-
-
-" powerline config
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
-set nocompatible
-set t_Co=256
-let g:minBufExplForceSyntaxEnable = 1
-if ! has('gui_running')
-  set ttimeoutlen=10
-  augroup FastEscape
-  autocmd!
-  au InsertEnter * set timeoutlen=0
-  au InsertLeave * set timeoutlen=1000
-  augroup END
-endif
-set laststatus=2 " Always display the statusline in all windows
-set guifont=Inconsolata\ for\ Powerline:h14
-set noshowmode
-
