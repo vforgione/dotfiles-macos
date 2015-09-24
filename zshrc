@@ -8,3 +8,5 @@ export PATH="/usr/local/bin:~/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
