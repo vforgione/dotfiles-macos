@@ -4,5 +4,10 @@ alias la="ls -al"
 alias lt="ls -ltr"
 
 # databases
-alias start-postgres="postgres -D /usr/local/var/postgres"
-alias start-redis="redis-server /usr/local/etc/redis.conf"
+alias start_postgres="postgres -D /usr/local/var/postgres"
+alias start_redis="redis-server /usr/local/etc/redis.conf"
+
+# functions
+function ps_kill {
+	ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9 
+}
