@@ -16,6 +16,9 @@ echo "cloning dotfiles"
 cd ~
 git clone https://github.com/vforgione/dotfiles.git Dotfiles
 
+echo "installing custom font"
+open ~/Dotfiles/Inconsolata\ for\ Powerline.otf
+
 echo "installing oh my zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -24,6 +27,7 @@ ln -s ~/Dotfiles/aliases ~/.aliases
 ln -s ~/Dotfiles/gemrc ~/.gemrc
 ln -s ~/Dotfiles/gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/vimrc ~/.vimrc
+rm ~/.zshrc
 ln -s ~/Dotfiles/zshrc ~/.zshrc
 
 echo "generating new rsa key for machine"
