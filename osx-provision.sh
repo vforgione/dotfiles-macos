@@ -4,7 +4,7 @@ echo "installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "installing brew apps"
-brew install ack brew-cask curl git htop-osx libyaml node openssl python python3 ruby tree vim wget xz
+brew install ack brew-cask curl git htop-osx libyaml node openssl python python3 ruby tree vim wget xz go
 
 echo "installing brew cask apps"
 brew cask install iterm2 spectacle sublime-text3 vagrant vagrant-manager virtualbox
@@ -29,6 +29,9 @@ ln -s ~/Dotfiles/gitconfig ~/.gitconfig
 ln -s ~/Dotfiles/vimrc ~/.vimrc
 rm ~/.zshrc
 ln -s ~/Dotfiles/zshrc ~/.zshrc
+
+echo "making go source dir"
+mkdir -p ~/Workspace/golang/github.com/forgione
 
 echo "generating new rsa key for machine"
 mkdir ~/.ssh
