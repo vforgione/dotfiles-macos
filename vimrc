@@ -70,10 +70,13 @@ augroup mydelimitMate
 augroup END
 
 " tabs/indentation
-au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
-au BufRead,BufNewFile *rb,*html,*js,*css,*json,*yaml set tabstop=2
-au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw set expandtab
+au BufRead,BufNewFile *.py,*.c,*.h,*.go set tabstop=4
+au BufRead,BufNewFile *.py,*.c,*.h,*.go set shiftwidth=4
+au BufRead,BufNewFile *.py set expandtab
+au BufRead,BufNewFile *.go set noexpandtab
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set tabstop=2
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set shiftwidth=2
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set expandtab
 fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=4
@@ -85,16 +88,14 @@ fu Select_c_style()
 endf
 au BufRead,BufNewFile *.c,*.h call Select_c_style()
 au BufRead,BufNewFile Makefile* set noexpandtab
-au BufRead,BufNewFile *.rb,*.html,*.js,*.css,*.json,*.yaml set shiftwidth=2
-au BufRead,BufNewFile *.rb,*.html,*.js,*.css,*.json,*.yaml set expandtab
 
 " whitespace cleaning
 highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw,*.rb,*.html,*.js,*.css,*.json,*.yaml match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.rb,*.html,*.js,*.css,*.json,*.yaml match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml match BadWhitespace /\s\+$/
 
 " unix line endings
-au BufNewFile *.py,*.pyw,*.c,*.h,*.rb,*.html,*.js,*.css,*.json,*.yaml set fileformat=unix
+au BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set fileformat=unix
 
 " utf8 file encoding
 set encoding=utf-8
