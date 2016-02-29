@@ -12,3 +12,4 @@ export GOPATH="$HOME/Workspace/golang"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+if [ -f ~/.work ] ; then source ~/.work ; fi

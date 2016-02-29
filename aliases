@@ -4,8 +4,9 @@ alias la="ls -al"
 alias lt="ls -ltr"
 
 # databases
-alias start_postgres="postgres -D /usr/local/var/postgres"
-alias start_redis="redis-server /usr/local/etc/redis.conf"
+# alias start_postgres="postgres -D /usr/local/var/postgres"
+# alias start_redis="redis-server /usr/local/etc/redis.conf"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 # functions
 function ps_kill {
