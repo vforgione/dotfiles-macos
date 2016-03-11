@@ -12,8 +12,9 @@ export GOPATH="$HOME/Workspace/golang"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+<<<<<<< HEAD
 
 docker_running=`docker-machine ls | grep tcp`
-if [ "$docker_running" ]; then
-	eval "$(docker-machine env default)";
-fi
+if [ "$docker_running" ]; then eval "$(docker-machine env default)"; fi
+
+if [ -f ~/.work ] ; then source ~/.work ; fi

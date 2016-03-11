@@ -10,8 +10,8 @@ diff = true
 [alias]
 co = checkout
 cb = checkout -b
-cm = commit -m
-cma = commit --amend -m
+cm = commit 
+cma = commit --amend 
 df = diff
 st = status
 br = branch
