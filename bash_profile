@@ -9,4 +9,5 @@ export EDITOR=/usr/bin/vim
 
 # sources
 source $HOME/.aliases
+source $HOME/Dotfiles/git-completion.bash
 if [ -f ~/.work ] ; then source ~/.work ; fi
