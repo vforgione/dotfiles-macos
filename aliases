@@ -3,10 +3,12 @@ alias ll="ls -l"
 alias la="ls -al"
 alias lt="ls -ltr"
 
-# databases
-# alias start_postgres="postgres -D /usr/local/var/postgres"
-# alias start_redis="redis-server /usr/local/etc/redis.conf"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+# vagrant shortcuts
+alias vvup="vagrant up"
+alias vvprovision="vagrant provision"
+alias vvssh="vagrant ssh"
+alias vvhalt="vagrant halt"
+alias vvdestroy="vagrant destroy"
 
 # functions
 function ps_kill {
