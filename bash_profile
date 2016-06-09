@@ -1,5 +1,7 @@
 # bash prompt
 export PS1="\u@\h \[\033[1;97m\]\w\[\033[0m\] \$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
