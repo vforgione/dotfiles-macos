@@ -74,9 +74,12 @@ au BufRead,BufNewFile *.py,*.c,*.h,*.go set tabstop=4
 au BufRead,BufNewFile *.py,*.c,*.h,*.go set shiftwidth=4
 au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.go set noexpandtab
-au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set tabstop=2
-au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set shiftwidth=2
-au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set expandtab
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set tabstop=2
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set shiftwidth=2
+au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set expandtab
+au BufRead,BufNewFile *.rst set tabstop=3
+au BufRead,BufNewFile *.rst set shiftwidth=3
+au BufRead,BufNewFile *.rst set expandtab
 fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=4
@@ -95,8 +98,7 @@ au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*
 au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml match BadWhitespace /\s\+$/
 
 " unix line endings
-au BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml set fileformat=unix
+au BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.rst,*.md set fileformat=unix
 
 " utf8 file encoding
 set encoding=utf-8
-
