@@ -550,11 +550,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>469 694 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>535 239 850 702 0 0 1920 1177 </string>
+	<string>3 7 1914 1167 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>935 280 850 702 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>962 8 955 1166 0 0 1920 1177 </string>
+	<string>962 458 850 702 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -750,12 +750,16 @@
 			<real>24.877283653846156</real>
 			<key>Bold Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.93333333730697632</real>
+				<real>0.99999129772186279</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.93333333730697632</real>
+				<real>0.99997437000274658</real>
 				<key>Red Component</key>
-				<real>0.93333333730697632</real>
+				<real>1</real>
 			</dict>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -814,12 +818,16 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.67843139171600342</real>
+				<real>0.97036570310592651</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.67843139171600342</real>
+				<real>0.97034925222396851</real>
 				<key>Red Component</key>
-				<real>0.67843139171600342</real>
+				<real>0.97037827968597412</real>
 			</dict>
 			<key>Guid</key>
 			<string>6B7D5E48-0159-4686-BBE2-E1C1AE16E8F9</string>
