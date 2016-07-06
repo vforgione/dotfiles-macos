@@ -95,7 +95,10 @@ au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*
 au BufRead,BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml match BadWhitespace /\s\+$/
 
 " unix line endings
-au BufNewFile *.py,*.c,*.h,*.go,*.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.rst,*.md set fileformat=unix
+set fileformat=unix
 
 " utf8 file encoding
 set encoding=utf-8
+
+" use system clipboard
+set clipboard=unnamed
