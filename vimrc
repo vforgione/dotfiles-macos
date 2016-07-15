@@ -42,7 +42,7 @@ let g:airline#extensions#tabline#enabled = 1
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 
 " nerdtree always open on startup
-" let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_console_startup = 1
 
 " syntastic
 let g:syntastic_error_symbol = '✘'
