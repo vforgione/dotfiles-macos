@@ -101,4 +101,6 @@ set fileformat=unix
 set encoding=utf-8
 
 " use system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus,unnamed,autoselect
+vmap <C-x> :!pbcopy<CR>  
+vmap <C-c> :w !pbcopy<CR><CR>
