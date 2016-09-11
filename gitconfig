@@ -20,11 +20,3 @@ ph = push heroku
 hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 type = cat-file -t
 dump = cat-file -p
-
-[ui]
-color = true
-editor = vim
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
