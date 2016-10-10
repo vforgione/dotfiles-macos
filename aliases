@@ -1,7 +1,6 @@
 # ls shortcuts
-alias ll="ls -l"
-alias la="ls -al"
-alias lt="ls -ltr"
+alias ll="ls -lh"
+alias la="ls -alh"
 
 # vagrant shortcuts
 alias vvup="vagrant up"

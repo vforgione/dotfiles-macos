@@ -1,5 +1,4 @@
 # bash prompt
-export PS1="\u@\h \[\033[1;97m\]\w\[\033[0m\] \$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
@@ -15,5 +14,6 @@ export HISTFILESIZE=10000
 # sources
 source $HOME/Dotfiles/aliases
 source $HOME/Dotfiles/git-completion.bash
+source $HOME/Dotfiles/pip-completion.bash
 if [ -f ~/.work ] ; then source ~/.work ; fi
 source $HOME/Dotfiles/bash_prompt

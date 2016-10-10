@@ -1,14 +1,11 @@
 atom
-gimp
 google-chrome
-inkscape
 iterm2
-libreoffice
 macdown
+pycharm-ce
 spectacle
 sublime-text3 (!)
 vagrant
 vagrant-manager
 virtualbox
 vlc
-xquartz
