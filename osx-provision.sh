@@ -4,7 +4,7 @@ echo "installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "installing brew-cask and git"
-brew install ack brew-cask git
+brew install git
 
 echo "cloning dotfiles"
 git clone https://github.com/vforgione/dotfiles.git ~/Dotfiles
