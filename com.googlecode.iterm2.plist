@@ -272,7 +272,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>836 715 770 381 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1046 172 850 813 0 0 1920 1177 </string>
+	<string>3 6 1914 1170 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>3 6 1914 1170 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -930,6 +930,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>494201337.05410397</real>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -976,7 +978,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-12T14:16:09Z</date>
+	<date>2016-09-16T17:50:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>

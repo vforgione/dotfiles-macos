@@ -15,5 +15,6 @@ export HISTFILESIZE=10000
 # sources
 source $HOME/Dotfiles/aliases
 source $HOME/Dotfiles/git-completion.bash
+source $HOME/Dotfiles/ssh-completion.bash
 if [ -f ~/.work ] ; then source ~/.work ; fi
 source $HOME/Dotfiles/bash_prompt
