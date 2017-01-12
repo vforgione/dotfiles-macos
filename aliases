@@ -2,13 +2,6 @@
 alias ll="ls -lh"
 alias la="ls -alh"
 
-# vagrant shortcuts
-alias vvup="vagrant up"
-alias vvprovision="vagrant provision"
-alias vvssh="vagrant ssh"
-alias vvhalt="vagrant halt"
-alias vvdestroy="vagrant destroy"
-
 # functions
 function ps_kill {
 	ps aux | grep -ie $1 | awk '{print $2}' | xargs kill -9 
