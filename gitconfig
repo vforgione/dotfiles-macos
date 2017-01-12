@@ -1,7 +1,7 @@
 [user]
 name = vforgione
 email = v.forgione@gmail.com
-identityfile = ~/.ssh/keys/id_rsa
+identityfile = ~/.ssh/id_rsa
 
 [color]
 ui = true
