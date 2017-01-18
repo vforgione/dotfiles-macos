@@ -1,10 +1,10 @@
 atom
-google-chrome
-iterm2
-macdown
-pycharm-ce
-spectacle
+java
+pycharm
+skype
+spotify
+transmission
 vagrant
 vagrant-manager
 virtualbox
-vlc
+webstorm
