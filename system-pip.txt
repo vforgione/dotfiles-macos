@@ -1,4 +1,2 @@
 ansible
-fabric3
 virtualenv
-wheel
