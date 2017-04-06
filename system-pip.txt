@@ -1,2 +1,3 @@
+Fabric3
 ansible
 virtualenv

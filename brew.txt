@@ -3,12 +3,14 @@ bash
 curl
 elasticsearch
 git
+gpg
 htop-osx
 httpie
 jq
 node
 openssl
 perl
+pyenv
 python
 python3
 redis

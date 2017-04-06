@@ -1,22 +1,24 @@
 [user]
-name = vforgione
-email = v.forgione@gmail.com
-identityfile = ~/.ssh/id_rsa
+	name = Vince Forgione
+	email = v.forgione@gmail.com
+	identityfile = ~/.ssh/id_rsa
+	signingkey = B20B7024019078E8
 
 [color]
-ui = true
-diff = true
+	ui = true
+	diff = true
 
 [alias]
-co = checkout
-cb = checkout -b
-cm = commit 
-cma = commit --amend 
-df = diff
-st = status
-br = branch
-po = push origin
-ph = push heroku
-hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-type = cat-file -t
-dump = cat-file -p
+	prune = fetch --prune
+	undo = reset --soft HEAD^
+	stash-all = stash save --include-untracked
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+[commit]
+	gpgSign = True
+
+[status]
+	showUntrackedFiles = all
+
+[gpg]
+	program = gpg2
