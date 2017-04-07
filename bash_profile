@@ -25,3 +25,6 @@ source $HOME/Dotfiles/bash_prompt
 
 # pyenv
 eval "$(pyenv init -)"
+
+# gpg
+export GPG_TTY=$(tty)
