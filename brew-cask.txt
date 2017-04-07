@@ -1,11 +1,11 @@
 atom
 docker
+google-chrome
+iterm2
 java
-pycharm
-skype
+kitematic
+spectacle
 spotify
-transmission
 vagrant
 vagrant-manager
 virtualbox
-webstorm

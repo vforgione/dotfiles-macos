@@ -1,21 +1,6 @@
 " turn off vi compat
 set nocompatible
 
-" enable plugins
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-
-call vundle#end()
 filetype plugin indent on
 
 " general settings
@@ -38,45 +23,20 @@ let g:airline_detect_paste=1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-" open/close nerdtree tabs with \t
-nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
-
-" nerdtree always open on startup
-let g:nerdtree_tabs_open_on_console_startup = 1
-
-" syntastic
-let g:syntastic_error_symbol = '✘'
-let g:syntastic_warning_symbol = "▲"
-augroup mySyntastic
-  au!
-  au FileType tex let b:syntastic_mode = "passive"
-augroup END
-
-" vim-gitgutter
-hi clear SignColumn
-let g:airline#extensions#hunks#non_zero_only = 1
-
-" delimitMate
-let delimitMate_expand_cr = 1
-augroup mydelimitMate
-  au!
-  au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
-  au FileType tex let b:delimitMate_quotes = ""
-  au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
-  au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
-augroup END
-
 " tabs/indentation
 au BufRead,BufNewFile *.py,*.c,*.h,*.go set tabstop=4
 au BufRead,BufNewFile *.py,*.c,*.h,*.go set shiftwidth=4
 au BufRead,BufNewFile *.py set expandtab
 au BufRead,BufNewFile *.go set noexpandtab
+
 au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set tabstop=2
 au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set shiftwidth=2
 au BufRead,BufNewFile *.rb,*.js,*.coffee,*.html,*.css,*.scss,*.sass,*.json,*.yaml,*.yml,*.md set expandtab
+
 au BufRead,BufNewFile *.rst set tabstop=3
 au BufRead,BufNewFile *.rst set shiftwidth=3
 au BufRead,BufNewFile *.rst set expandtab
+
 fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=4
