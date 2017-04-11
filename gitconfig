@@ -2,7 +2,6 @@
 	name = Vince Forgione
 	email = v.forgione@gmail.com
 	identityfile = ~/.ssh/id_rsa
-	signingkey = B20B7024019078E8
 
 [color]
 	ui = true
@@ -14,11 +13,5 @@
 	stash-all = stash save --include-untracked
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
-[commit]
-	gpgSign = True
-
 [status]
 	showUntrackedFiles = all
-
-[gpg]
-	program = gpg2
