@@ -1,6 +1,7 @@
 atom
 docker
 google-chrome
+gpgtools
 iterm2
 java
 kitematic

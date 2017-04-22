@@ -2,6 +2,7 @@
 	name = Vince Forgione
 	email = v.forgione@gmail.com
 	identityfile = ~/.ssh/id_rsa
+	signingkey = 294F8B70CC1A4861
 
 [color]
 	ui = true
@@ -15,3 +16,7 @@
 
 [status]
 	showUntrackedFiles = all
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
