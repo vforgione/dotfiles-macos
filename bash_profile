@@ -1,19 +1,19 @@
-# bash prompt
+# export vars
+export EDITOR=`which vim`
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# path
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+# aliases
+alias ll="ls -lh"
+alias la="ls -alh"
 
-# editor
-export EDITOR=`which vim`
+# source additional configs
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
-# bash history config
-export HISTFILESIZE=10000
+. $HOME/Dotfiles/bash_prompt
 
-# sources
-source $HOME/Dotfiles/aliases
-source $HOME/Dotfiles/git-completion.bash
-source $HOME/Dotfiles/ssh-completion.bash
-if [ -f ~/.work ] ; then source ~/.work ; fi
-source $HOME/Dotfiles/bash_prompt
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+export GPG_TTY=$(tty)
