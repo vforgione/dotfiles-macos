@@ -1,22 +1,26 @@
 [user]
-	name = Vince Forgione
-	email = v.forgione@gmail.com
-	identityfile = ~/.ssh/id_rsa
-	signingkey = 294F8B70CC1A4861
+    name = Vince Forgione
+    email = vforgione@uchicago.edu
+    identitfyfile = ~/.ssh/id_rsa
+    signingkey = CD887496C829C1EA8E4E6327A7DE00B18D32309C
 
 [color]
-	ui = true
-	diff = true
+    ui = true
+    diff = true
 
 [alias]
-	prune = fetch --prune
-	undo = reset --soft HEAD^
-	stash-all = stash save --include-untracked
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    prune = fetch --prune
+    undo = reset --soft ^HEAD
+    stash-all = stash save --include-untracked
 
 [status]
-	showUntrackedFiles = all
+    showUntrackedFiles = all
+
 [commit]
-	gpgsign = true
+    gpgsign = true
+
+[core]
+    editor = vim
+
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+    program = /usr/local/bin/gpg
