@@ -1,15 +1,11 @@
 ack
-bash
+bash-completion
 curl
 gcc
 git
-htop-osx
-httpie
+htop
 make
 openssl
-python
-python3
-sqlite
 tree
 vim
 wget
