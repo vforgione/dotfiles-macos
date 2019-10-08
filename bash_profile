@@ -2,6 +2,7 @@
 export EDITOR=`which vim`
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+export GPG_TTY=$(tty)
 
 # aliases
 alias ll="ls -lh"
@@ -16,4 +17,3 @@ fi
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-export GPG_TTY=$(tty)
