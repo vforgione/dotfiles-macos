@@ -14,3 +14,15 @@ sqlite
 tree
 vim
 wget
+coreutils
+automake
+autoconf
+openssl
+libyaml
+readline
+libxslt
+libtool
+unixodbc
+unzip
+xz
+zlib
