@@ -1,8 +1,8 @@
 [user]
     name = Vince Forgione
-    email = vforgione@uchicago.edu
+    email = vince.4gione@icloud.com
     identitfyfile = ~/.ssh/id_rsa
-    signingkey = CD887496C829C1EA8E4E6327A7DE00B18D32309C
+    signingkey =
 
 [color]
     ui = true
