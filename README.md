@@ -1,9 +1,18 @@
-# Vince's Dotfiles
+Vince's macOS Dotfiles
 
-This is a collection of scripts, provisioners and other random things I keep
-around in a `~/Dotfiles` directory.
+Clone the repo:
 
-Most of the meat of this can easily be gleaned from reading the `osx-provision.sh` 
-file where I install some software and symlink a bunch of configs.
+```bash
+$ git clone --recurse-submodules git@github.com:vforgione/dotfiles-macos.git $HOME/Dotfiles
+```
 
-Other files in here are for quick reference and copy/pasta needs.
+Symlink these things:
+
+```bash
+$ ln -s $HOME/Dotfiles/bash_aliases $HOME/.bash_aliases
+$ ln -s $HOME/Dotfiles/bash_prompt $HOME/.bash_prompt
+$ ln -s $HOME/Dotfiles/inputrc $HOME/.inputrc
+$ ln -s $HOME/Dotfiles/bash_profile $HOME/.bash_profile
+$ ln -s $HOME/Dotfiles/vim $HOME/.vim
+$ ln -s $HOME/Dotfiles/vimrc $HOME/.vimrc
+```
