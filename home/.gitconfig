@@ -1,0 +1,23 @@
+[user]
+	name = Vince Forgione
+	email = vince.4gione@icloud.com
+	identityfile = id_ed25519
+	signingKey = D8D0A52E86003C3E
+[init]
+	defaultBranch = main
+[color]
+	branch = true
+	diff = true
+	push = true
+	remote = true
+	showBranch = true
+	status = true
+	ui = true
+[commit]
+	gpgSign = true
+[core]
+	editor = nvim
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	rebase = false

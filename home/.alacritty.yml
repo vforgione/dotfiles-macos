@@ -1,0 +1,27 @@
+live_config_reload: true
+
+selection:
+  save_to_clipboard: true
+
+window:
+  dimensions:
+    columns: 120
+    lines: 40
+  padding:
+    x: 5
+    y: 5
+
+render_timer: false
+
+custom_cursor_colors: true
+hide_cursor_when_typing: false
+cursor_style: Block
+
+font:
+  normal:
+    family: 'FiraCode Nerd Font Mono'
+  bold:
+    family: 'FiraCode Nerd Font Mono'
+  italic:
+    family: 'FiraCode Nerd Font Mono'
+  size: 13
