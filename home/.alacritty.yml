@@ -25,3 +25,45 @@ font:
   italic:
     family: 'FiraCode Nerd Font Mono'
   size: 13
+
+schemes:
+  one-dark: &dark
+    primary:
+      background: '#1d1f21'
+      foreground: '#c5c8c6'
+    cursor:
+      text:       CellBackground
+      cursor:     '#c5c8c6' # syntax-cursor-color
+    selection:
+      text:       CellForeground
+      background: '#3e4451' # syntax-selection-color
+    normal:
+      black:      '#1d1f21' # mono-3
+      red:        '#cc6666' # red 1
+      green:      '#b5bd68'
+      yellow:     '#f0c674' # orange 2
+      blue:       '#81a2be'
+      magenta:    '#b294bb'
+      cyan:       '#8abeb7'
+      white:      '#c5c8c6' # mono-2
+  light: &light
+    primary:
+      background: '#f0f0f0'
+      foreground: '#000000'
+    cursor:
+      text:       CellBackground
+      cursor:     CellForeground
+    selection:
+      text:       '#f0f0f0'
+      background: '#000000'
+    normal:
+      black:      '#000000'
+      red:        '#731f1f'
+      green:      '#34731f'
+      blue:       '#1f2073'
+      yellow:     '#6d731f'
+      magenta:    '#731f5f'
+      cyan:       '#1f6c73'
+      white:      '#f0f0f0'
+
+colors: *light
