@@ -1,0 +1,12 @@
+[submodule "home/.local/share/nvim/site/pack/x/start/nerdtree"]
+	path = home/.local/share/nvim/site/pack/x/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "home/.local/share/nvim/site/pack/x/start/nerdtree-git-plugin"]
+	path = home/.local/share/nvim/site/pack/x/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "home/.local/share/nvim/site/pack/x/start/vim-devicons"]
+	path = home/.local/share/nvim/site/pack/x/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "home/.local/share/nvim/site/pack/x/start/vim-airline"]
+	path = home/.local/share/nvim/site/pack/x/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
