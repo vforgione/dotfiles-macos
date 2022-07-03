@@ -1,36 +1,28 @@
-local cmd = vim.cmd
-local opt = vim.opt
-local fn  = vim.fn
-local g   = vim.g
+vim.g.mapleader = ' '
 
+vim.cmd [[ filetype plugin on ]]
 
--- =====================
---  CORE CONFIGURATIONS
--- =====================
+vim.opt.autoindent = true
+vim.opt.autoread = true
+vim.opt.backspace = { "indent", "eol", "start" }
+vim.opt.encoding = "utf-8"
+vim.opt.expandtab = true
+vim.opt.fileformat = "unix"
+vim.opt.hidden = true
+vim.opt.mouse = "a"
+vim.opt.number = true
+vim.opt.shell = "/usr/local/bin/bash"
+vim.opt.shiftwidth = 2
+vim.opt.smartindent = true
+vim.opt.smarttab = true
+vim.opt.spelllang = "en"
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.syntax = "on"
+vim.opt.tabstop = 2
+vim.opt.termguicolors = true
 
-cmd [[ filetype plugin on ]]
-
-opt.autoindent = true
-opt.autoread = true
-opt.backspace = { "indent", "eol", "start" }
-opt.encoding = "utf-8"
-opt.expandtab = true
-opt.fileformat = "unix"
-opt.hidden = true
-opt.mouse = "a"
-opt.number = true
-opt.shell = "/usr/local/bin/bash"
-opt.shiftwidth = 2
-opt.smartindent = true
-opt.smarttab = true
-opt.spelllang = "en"
-opt.splitbelow = true
-opt.splitright = true
-opt.syntax = "on"
-opt.tabstop = 4
-opt.termguicolors = true
-
-cmd [[
+vim.cmd [[
   augroup ft_py
     au BufRead,BufNewFile *.py,*.pyi set tabstop=4
     au BufRead,BufNewFile *.py,*.pyi set shiftwidth=4
@@ -46,14 +38,6 @@ cmd [[
   augroup END
 ]]
 
-
--- =========================
---  NERDTREE CONFIGURATIONS
--- =========================
-
-cmd [[
-  let NERDTreeShowHidden = 1
-  map <C-n> :NERDTreeToggle<CR>
-  au bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-  let g:NERDTreeGitStatusUseNerdFonts = 1
-]]
+require('plugins')
+require('setup')
+require('keymaps')

@@ -12,29 +12,15 @@ esac
 #  ALIASES & ENV VARS  #
 ##                    ##
 
-# use `bat` instead of `cat`
-if command -v bat &> /dev/null; then alias cat='bat'; fi
-
-# use `lsd` instead of verbose `ls` flags
-if command -v lsd &> /dev/null; then
-  alias lsd='lsd --date "+%Y-%m-%d %H:%M:%S" --size short'
-  alias ll='lsd -lh'
-  alias la='lsd -lhA'
-fi
+alias ll='ls -lhG'
+alias lo='ls -ohG'
+alias la='ll -A'
 
 # always make parent dirs
 alias mkdir='mkdir -p'
 
 # better recursive copy
 alias cpr='rsync -avr'
-
-# use nvim instead of vim
-_nvimpath=$(command -v nvim)
-if [[ $_nvimpath != "" ]]; then
-  alias vim='nvim'
-  export EDITOR=$_nvimpath
-fi
-unset $_nvimpath
 
 # history file
 HISTCONTROL=ignoreboth
@@ -64,6 +50,9 @@ elif [[ -f "$HOME/.asdf/asdf.sh" ]]; then
   . $HOME/.asdf/completions/asdf.bash
 fi
 
+if [[ -f "$HOME/.asdf/plugins/java/set-java-home.bash" ]]; then
+  . $HOME/.asdf/plugins/java/set-java-home.bash
+fi
 
 ##                 ##
 #  LOCAL OVERRIDES  #
