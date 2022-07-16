@@ -8,4 +8,6 @@ return require('packer').startup(function()
   use 'ojroques/nvim-hardline'
   
   use 's1n7ax/nvim-terminal'
+
+  use 'ervandew/supertab'
 end)

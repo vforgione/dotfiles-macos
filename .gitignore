@@ -1,3 +1,4 @@
 home/.ssh/*
 !home/.ssh/*.pub
 !home/.ssh/config
+home/.local/share/*
