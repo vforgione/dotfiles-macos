@@ -1,8 +1,7 @@
 [user]
   name = Vince Forgione
-  email = vince.4gione@icloud.com
+  email = v4gione@gmail.com
   identityfile = id_ed25519
-  signingKey = D8D0A52E86003C3E
 
 [init]
   defaultBranch = main
@@ -15,15 +14,6 @@
   showBranch = true
   status = true
   ui = true
-
-[commit]
-  gpgSign = true
-
-[core]
-  editor = nvim
-
-[gpg]
-  program = /usr/local/bin/gpg
 
 [pull]
   rebase = false
