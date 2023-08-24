@@ -1,8 +1,6 @@
 # set options
 
 setopt auto_cd
-setopt correct
-setopt correct_all
 setopt no_case_glob
 
 # path configs
